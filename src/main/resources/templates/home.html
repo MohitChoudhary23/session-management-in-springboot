@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Springboot-session-management-example</title>
+</head>
+<body>
+<div>
+    <form method="post" th:action="@{/user}">
+        <label>
+            <textarea cols="40" name="username" placeholder="Enter username" rows="2"></textarea>
+        </label>
+        <label>
+            <textarea cols="40" name="password" placeholder="Enter password" rows="2"></textarea>
+        </label>
+        <br><input type="submit" value="Login"/>
+    </form>
+</div>
+<div>
+    <br>
+    <form method="post" th:action="@{/destroy/session}">
+        <input type="submit" value="Destroy Session"/>
+    </form>
+</div>
+</body>
+</html>
